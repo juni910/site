@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anime Streaming</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Anime Streaming</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Bienvenue sur Anime Streaming</h2>
+            <p>Regardez vos animes préférés en streaming !</p>
+        </div>
+    </section>
+
+    <section id="anime-list" class="anime-list">
+        <h2>Nos Animes</h2>
+        <div class="anime-item">
+            <img src="images/anime1.jpg" alt="Anime 1">
+            <div class="anime-details">
+                <h3>Anime 1</h3>
+                <p>Un anime captivant sur un jeune héros.</p>
+                <button onclick="playVideo('anime1')">Regarder</button>
+            </div>
+        </div>
+        <!-- Ajoute d'autres animes ici -->
+    </section>
+
+    <section id="video-player" class="video-player">
+        <h2>Lecteur Vidéo</h2>
+        <video id="anime1" controls>
+            <source src="videos/anime1.mp4" type="video/mp4">
+            Ton navigateur ne supporte pas la lecture vidéo.
+        </video>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Anime Streaming. Tous droits réservés.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
